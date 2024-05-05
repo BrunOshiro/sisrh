@@ -50,7 +50,7 @@
                 this.errorMessage = "";
                 this.listaEmpregado = [];
                 const login = { 'usuario': this.usuario, 'senha': this.senha };
-                axios.post(this.url + '/loginunico/jwt', login)
+                axios.post(this.url + '/login/jwt', login)
                     .then(response => this.tokenJWT = response.data)
                     .catch(error => {
                         this.errorMessage = error;
